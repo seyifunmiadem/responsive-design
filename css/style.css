@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: fit-content;
+  height: auto;
+  /* margin: 2rem; */
+}
+.header {
+  padding-bottom: 3rem;
+}
+nav {
+  height: 4rem;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  position: fixed;
+  color: #fff;
+}
+.main-text {
+  padding: 2rem;
+}
+.main-text p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.circles .section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.circles .first-circles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+.first-circles .red,
+.yellow,
+.blue,
+.green,
+.orange,
+.lightblue {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  justify-content: space-between;
+}
+
+.first-circles .red {
+  background-color: red;
+  margin-bottom: 1rem;
+}
+.first-circles .blue {
+  background-color: blue;
+  margin-bottom: 1rem;
+}
+.first-circles .yellow {
+  background-color: yellow;
+  margin-bottom: 1rem;
+}
+.first-circles .green {
+  background-color: green;
+}
+.first-circles .orange {
+  background-color: orange;
+}
+.first-circles .lightblue {
+  background-color: lightblue;
+}
+.footer {
+  height: auto;
+  background-color: grey;
+  color: #fff;
+}
+.footer p {
+  padding: 0.5rem;
+}
+.footer p span {
+  font-weight: bolder;
+}
+.trademark {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .circles .section-title {
+    padding: 1rem;
+    text-align: center;
+  }
+  .circles .first-circles {
+    flex-direction: row-reverse;
+  }
+  
+  .circles .first-circles,
+  .green,
+  .orange,
+  .lightblue {
+    margin: 1rem;
+  }
+  .trademark{
+    margin-top: .5rem;
+  }
+}
